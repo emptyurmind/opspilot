@@ -1,22 +1,28 @@
 # OpsPilot
 
-OpsPilot is an intelligent incident diagnosis agent for microservice engineering teams.
+OpsPilot 是一个面向微服务研发团队的智能运维排障 Agent。
 
-The project is designed as a Java backend system that demonstrates agent orchestration,
-tool calling, RAG-based knowledge retrieval, evidence tracking, and execution auditing.
+这个项目会以 Java 后端系统的方式实现，用来展示 Agent 编排、工具调用、RAG 知识检索、证据链追踪和执行审计等能力。它不是一个简单的聊天机器人，而是一个可本地演示、可逐步接入真实日志/监控/Git/工单系统的后端 Agent 项目。
 
-## Project Goal
+## 项目目标
 
-In microservice systems, incident diagnosis often requires engineers to switch between
-logs, metrics, release records, Git changes, runbooks, and tickets. OpsPilot aims to
-aggregate these sources through an agent workflow and generate traceable diagnosis
-reports.
+在微服务系统中，线上问题排查通常需要研发人员在日志平台、监控平台、发布记录、Git 变更、故障手册和工单系统之间反复切换。OpsPilot 希望通过 Agent 工作流自动聚合多源证据，并生成可追溯的排障结论和处理建议。
 
-## Documentation
+## 核心能力
 
-- [Technical Design](docs/technical-design.md)
+- 根据自然语言问题识别排障意图
+- 自动生成排障步骤
+- 调用日志、监控、Git、知识库、工单等工具
+- 汇总结构化证据链
+- 生成最终排障报告
+- 记录任务步骤、工具调用和执行审计
+- 通过本地仿真数据支持可复现演示
 
-## Planned Tech Stack
+## 技术方案
+
+- [技术方案设计](docs/technical-design.md)
+
+## 计划技术栈
 
 - Java 17
 - Spring Boot 3.x
