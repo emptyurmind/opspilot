@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: ${OPSPILOT_DB_URL:jdbc:mysql://localhost:3306/opspilot?useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${OPSPILOT_DB_USERNAME:opspilot}
+    password: ${OPSPILOT_DB_PASSWORD:opspilot}
+  h2:
+    console:
+      enabled: false
+
