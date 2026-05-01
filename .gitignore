@@ -25,4 +25,5 @@ logs/
 # Build tools
 .mvn/wrapper/maven-wrapper.jar
 .m2/
+.mvn
 
